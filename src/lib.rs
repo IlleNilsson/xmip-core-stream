@@ -1,7 +1,7 @@
 #![forbid(unsafe_code)]
 
 use std::sync::Arc;
-use xmip_core::StreamId;
+use xcore::StreamId;
 
 #[derive(Clone, Debug, Eq, PartialEq)]
 pub struct Stream {
