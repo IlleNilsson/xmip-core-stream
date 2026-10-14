@@ -307,7 +307,7 @@ mod tests {
         assert!(short.unread().is_none(), "nothing asked for it yet");
         let refused = short.load().expect_err("not as long as kept");
         assert!(refused.to_string().contains("5 bytes, and 9"), "{refused}");
-        assert!(short.bytes().is_empty());
+        assert_eq!(short.bytes(), []);
         assert!(short.unread().is_some_and(|why| why.contains("5 bytes")));
     }
 }
