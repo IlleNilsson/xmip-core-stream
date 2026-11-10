@@ -30,4 +30,4 @@ makes replay, audit and preservation mean anything. A Stream is not a Message
 the sender until Xmip accepts it.
 
 `doc/architecture/runtime-model.md` sections 2 and 3 and ADR-0003 govern it;
-`architecture.xmip` carries the maturity.
+`architecture.toml` carries the maturity.
